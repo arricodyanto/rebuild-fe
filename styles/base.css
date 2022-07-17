@@ -30,6 +30,11 @@ body {
   transition: width 0.3s;
 }
 
+.hamburger-in {
+  width: 256px;
+  transition: width 0.3s;
+}
+
 .avatar-down {
   @apply shadow-lg;
   height: 180px;
@@ -50,6 +55,18 @@ body {
 }
 
 .notif-up {
+  height: 0px;
+  transition: height 0.3s;
+}
+
+.search-down {
+  @apply shadow-lg;
+  height: 85px;
+  transition: height 0.3s;
+  transition-delay: 0.4s;
+}
+
+.search-up {
   height: 0px;
   transition: height 0.3s;
 }

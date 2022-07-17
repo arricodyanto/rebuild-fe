@@ -82,3 +82,50 @@ document.addEventListener('click', (event) => {
         notifBox.classList.add('notif-down')
     }
 })
+
+//Topbar Search
+const search = document.querySelector('#search-ic');
+const searchBox = document.querySelector('#search-box');
+
+search.addEventListener('click', function() {
+    searchBox.classList.toggle('search-up');
+    searchBox.classList.toggle('search-down');
+})
+
+document.addEventListener('click', (event) => {
+    const isClickInside = search.contains(event.target);
+    if(!isClickInside) {
+        // settings.classList.remove('setting-active')
+        searchBox.classList.remove('search-down')
+        searchBox.classList.add('search-up')
+    }
+    const box = searchBox.contains(event.target)
+    if(box) {
+        searchBox.classList.remove('search-up')
+        searchBox.classList.add('search-down')
+    }
+})
+
+// Hamburger
+const hamburger = document.querySelector('#hamburger-ic');
+const hamburgerMenu = document.querySelector('#hamburger-menu');
+
+hamburger.addEventListener('click', function() {
+    // settings.classList.toggle('setting-active');
+    hamburgerMenu.classList.toggle('slide-out')
+    hamburgerMenu.classList.toggle('hamburger-in')
+});
+
+document.addEventListener('click', (event) => {
+    const isClickInside = hamburger.contains(event.target);
+    if(!isClickInside) {
+        // settings.classList.remove('setting-active')
+        hamburgerMenu.classList.remove('hamburger-in')
+        hamburgerMenu.classList.add('slide-out')
+    }
+    const box = hamburgerMenu.contains(event.target)
+    if(box) {
+        hamburgerMenu.classList.remove('slide-out')
+        hamburgerMenu.classList.add('hamburger-in')
+    }
+})
