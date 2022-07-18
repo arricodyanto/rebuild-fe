@@ -31,21 +31,8 @@ body {
 }
 
 .hamburger-in {
-  width: 300px;
+  width: 256px;
   transition: width 0.3s;
-}
-
-.topmenu-down {
-  @apply shadow-lg;
-  max-height: 390px;
-  height: 100%;
-  transition: height 0.3s ease-in-out;
-  transition-delay: 0.4s;
-}
-
-.topmenu-up {
-  height: 0%;
-  transition: height 0.3s ease-in-out;
 }
 
 .avatar-down {
@@ -85,13 +72,24 @@ body {
 }
 
 .menu-down {
-  height: auto;
-  transition: height 0.3s;
+  max-height: 200px;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .menu-up {
-  height: 0;
-  transition: height 0.3s;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.topmenu-down {
+  @apply shadow-lg;
+  max-height: 390px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.topmenu-up {
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .collapse-active > span:nth-child(2) {

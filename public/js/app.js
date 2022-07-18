@@ -130,15 +130,27 @@ document.addEventListener('click', (event) => {
     }
 })
 
-const collapse = document.getElementsByClassName("collapse");
+const collapse = document.getElementsByClassName('collapse');
 var i;
 
 for (i = 0; i < collapse.length; i++) {
-  collapse[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    this.classList.toggle("collapse-active");
+  collapse[i].addEventListener('click', function() {
+    this.classList.toggle('active');
+    this.classList.toggle('collapse-active');
     const content = this.nextElementSibling;
     content.classList.toggle('menu-up');
     content.classList.toggle('menu-down');
   });
 }
+
+
+// Warning Alert
+const modal = document.getElementsByClassName('modal');
+
+for(i=0; i<modal.length; i++) {
+    modal[i].addEventListener('click', function() {
+        const content = this.parentElement;
+        content.classList.toggle('hidden')
+    })
+}
+    
