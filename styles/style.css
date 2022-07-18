@@ -684,12 +684,12 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mt-3{
-  margin-top: 0.75rem;
-}
-
 .mr-2{
   margin-right: 0.5rem;
+}
+
+.ml-7{
+  margin-left: 1.75rem;
 }
 
 .mb-4{
@@ -702,6 +702,10 @@ video {
 
 .ml-1{
   margin-left: 0.25rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .inline-block{
@@ -794,10 +798,6 @@ video {
 
 .w-\[12px\]{
   width: 12px;
-}
-
-.w-60{
-  width: 15rem;
 }
 
 .w-3{
@@ -1020,12 +1020,12 @@ video {
   padding: 1.75rem;
 }
 
-.p-4{
-  padding: 1rem;
-}
-
 .p-3{
   padding: 0.75rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .p-5{
@@ -1037,9 +1037,14 @@ video {
   padding-right: 0px;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-\[2px\]{
@@ -1050,6 +1055,11 @@ video {
 .px-\[4px\]{
   padding-left: 4px;
   padding-right: 4px;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-3{
@@ -1121,6 +1131,10 @@ video {
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.leading-10{
+  line-height: 2.5rem;
 }
 
 .tracking-wide{
@@ -1259,7 +1273,7 @@ body{
 }
 
 .hamburger-in {
-  width: 256px;
+  width: 300px;
   transition: width 0.3s;
 }
 
@@ -1295,7 +1309,7 @@ body{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  height: 85px;
+  height: 90px;
   transition: height 0.3s;
   transition-delay: 0.4s;
 }
@@ -1303,6 +1317,21 @@ body{
 .search-up {
   height: 0px;
   transition: height 0.3s;
+}
+
+.menu-down {
+  max-height: 200px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.menu-up {
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapse-active > span:nth-child(2){
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:text-sky-500:hover{

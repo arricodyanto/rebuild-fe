@@ -31,8 +31,21 @@ body {
 }
 
 .hamburger-in {
-  width: 256px;
+  width: 300px;
   transition: width 0.3s;
+}
+
+.topmenu-down {
+  @apply shadow-lg;
+  max-height: 390px;
+  height: 100%;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.topmenu-up {
+  height: 0%;
+  transition: height 0.3s ease-in-out;
 }
 
 .avatar-down {
@@ -61,7 +74,7 @@ body {
 
 .search-down {
   @apply shadow-lg;
-  height: 85px;
+  height: 90px;
   transition: height 0.3s;
   transition-delay: 0.4s;
 }
@@ -69,4 +82,18 @@ body {
 .search-up {
   height: 0px;
   transition: height 0.3s;
+}
+
+.menu-down {
+  height: auto;
+  transition: height 0.3s;
+}
+
+.menu-up {
+  height: 0;
+  transition: height 0.3s;
+}
+
+.collapse-active > span:nth-child(2) {
+  @apply rotate-90;
 }

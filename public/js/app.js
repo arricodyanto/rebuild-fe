@@ -129,3 +129,16 @@ document.addEventListener('click', (event) => {
         hamburgerMenu.classList.add('hamburger-in')
     }
 })
+
+const collapse = document.getElementsByClassName("collapse");
+var i;
+
+for (i = 0; i < collapse.length; i++) {
+  collapse[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    this.classList.toggle("collapse-active");
+    const content = this.nextElementSibling;
+    content.classList.toggle('menu-up');
+    content.classList.toggle('menu-down');
+  });
+}
