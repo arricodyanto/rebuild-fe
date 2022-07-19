@@ -14,6 +14,7 @@ module.exports = {
         dark: '#374151',
         darkColor: '#323742',
         warning: '#fef3c7',
+        info: '#cffafe',
       },
       fontFamily: {
         IBM: ['IBM Plex Sans']
